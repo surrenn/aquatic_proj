@@ -1,0 +1,159 @@
+.whyus {
+  padding-top: 80px;
+  min-height: 907px;
+  // background: url("../img/whyus/bg.png") center center no-repeat;
+  // background-color: #fff;
+
+  &__title {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    text-align: left;
+  }
+
+  &__reasons-block {
+    margin-top: 50px;
+  }
+}
+
+.reasons-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-left: -20px;
+  row-gap: 45px;
+  &__column {
+    flex: 0 1 33.333%;
+    padding: 0 20px;
+  }
+}
+
+.why-item {
+  min-height: 246px;
+  &__img {
+    width: 70px;
+    height: 70px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+  }
+
+  &__caption {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  & > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.big-wrapper__whyus {
+  .bubble1,
+  .bubble2,
+  .bubble3,
+  .bubble4,
+  .bubble5,
+  .bubble6,
+  .bubble7,
+  .bubble8,
+  .bubble9,
+  .bubble10 {
+    position: absolute;
+  }
+
+  .bubble1 {
+    top: 107px;
+    right: 820px;
+  }
+
+  .bubble2 {
+    top: 165px;
+    right: 694px;
+  }
+
+  .bubble3 {
+    top: 55px;
+    right: 586px;
+  }
+
+  .bubble4 {
+    top: 123px;
+    right: 388px;
+  }
+
+  .bubble5 {
+    top: 25px;
+    right: 233px;
+  }
+
+  .bubble6 {
+    top: 97px;
+    right: 87px;
+  }
+
+  .bubble7 {
+    top: 402px;
+    right: 87px;
+  }
+
+  .bubble8 {
+    right: 30px;
+    bottom: 226px;
+  }
+
+  .bubble9 {
+    right: 72px;
+    bottom: 71px;
+  }
+
+  .bubble10 {
+    left: 17px;
+    bottom: -23px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .why-item {
+    min-height: 190px;
+  }
+
+  .reasons-block {
+    margin-top: 30px;
+    margin-right: -10px;
+    margin-left: -10px;
+    row-gap: 35px;
+    &__column {
+      flex: 1 1 50%;
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .reasons-block {
+    margin: 25px auto 0 auto;
+    &__column {
+      padding: 0;
+      flex: 1 1 100%;
+    }
+
+    &__why-item {
+      margin-bottom: 25px;
+    }
+  }
+
+  .why-item {
+    width: 100%;
+  }
+}

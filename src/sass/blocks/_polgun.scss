@@ -1,0 +1,32 @@
+.polgun {
+  min-height: 600px;
+  padding: 80px 0;
+
+  &__container {
+  }
+
+  &__title {
+    color: #fff;
+    max-width: 720px;
+  }
+
+  &__text {
+    max-width: 640px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+    margin-top: 30px;
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 33px;
+    max-width: 985px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

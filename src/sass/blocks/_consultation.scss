@@ -1,0 +1,50 @@
+.consultation {
+  padding: 80px 0 94px 0;
+  min-height: 580px;
+  &__container {
+  }
+
+  &__free-consult {
+  }
+}
+
+.free-consult {
+  min-height: 460px;
+  max-width: 640px;
+  border-radius: 40px;
+  background-color: #fff;
+  padding: 50px 50px 70px 50px;
+  &__title {
+    font-family: $second-font;
+    font-weight: 900;
+    font-size: 30px;
+  }
+
+  &__form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    border: 2px solid #eaeaea;
+    border-radius: 16px;
+    flex: 1 1 auto;
+    height: 72px;
+    padding: 25px;
+    color: #a4a4a4;
+  }
+
+  &__input:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    border-radius: 16px;
+    min-height: 72px;
+    background-color: $second-color;
+    color: #fff;
+    border: none;
+    font-family: $second-font;
+  }
+}

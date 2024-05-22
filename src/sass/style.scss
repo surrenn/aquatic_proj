@@ -1,0 +1,50 @@
+@import "libs/bootstrap-reboot.min";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import "font/font";
+
+@import "variables/_variables.scss";
+
+* {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 18px;
+  color: $main-color;
+}
+
+a {
+  color: $main-color;
+
+  &:hover {
+    text-decoration: none;
+    color: $main-color;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+@import "blocks/bigWrapper";
+@import "blocks/header";
+@import "blocks/btns";
+@import "blocks/whyus";
+@import "blocks/titles";
+@import "blocks/offer";
+@import "blocks/projects";
+@import "blocks/provider";
+@import "blocks/order";
+@import "blocks/consultation";
+@import "blocks/work";
+@import "blocks/polgun";
+@import "blocks/exp";
+@import "blocks/footer";

@@ -1,0 +1,51 @@
+.btn {
+  display: inline-block;
+  border: 2px solid $second-color;
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 22px 24px;
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  line-height: 13px;
+
+  &__more {
+    padding: 22px 33px;
+    background-color: #eafaff;
+  }
+
+  &__get-consult {
+    background-color: $second-color;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    padding: 23px 49px;
+  }
+
+  &__order {
+    background-color: #eff9ff;
+    color: $second-color;
+    padding: 23px 108px;
+  }
+
+  &:hover {
+    background-color: $second-color;
+  }
+
+  &__footer {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    padding: 15px 46px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.26);
+    border: none;
+    line-height: 20px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.899);
+    }
+  }
+}
