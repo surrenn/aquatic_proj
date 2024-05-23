@@ -10,17 +10,27 @@
   text-align: center;
   line-height: 13px;
 
+  &:hover {
+    background-color: $second-color;
+    color: #fff;
+  }
+
+  &__promo {
+    padding: 23px 33px;
+    background-color: $second-color;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+
+    &:hover {
+      background-color: #e74848;
+      color: #fff;
+    }
+  }
+
   &__more {
     padding: 22px 33px;
     background-color: #eafaff;
-  }
-
-  &__get-consult {
-    background-color: $second-color;
-    font-weight: 400;
-    font-size: 18px;
-    color: #fff;
-    padding: 23px 49px;
   }
 
   &__order {
@@ -29,8 +39,17 @@
     padding: 23px 108px;
   }
 
-  &:hover {
+  &__provider {
     background-color: $second-color;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    padding: 23px 49px;
+
+    &:hover {
+      background-color: #e74848;
+      color: #fff;
+    }
   }
 
   &__footer {
@@ -46,6 +65,7 @@
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.899);
+      color: #000;
     }
   }
 }

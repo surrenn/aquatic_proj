@@ -50,6 +50,10 @@
       font-weight: 400;
       font-size: 22px;
       color: #fff;
+
+      &:hover {
+        color: #ffffff9f;
+      }
     }
   }
 
@@ -59,10 +63,17 @@
 
   &__writeus {
     margin-top: 20px;
-    font-family: $second-font;
-    font-weight: 400;
-    font-size: 14px;
-    color: #fff;
+
+    a {
+      font-family: $second-font;
+      font-weight: 400;
+      font-size: 14px;
+      color: #fff;
+
+      &:hover {
+        color: #ffffff9f;
+      }
+    }
 
     img {
       width: 44px;
@@ -73,10 +84,17 @@
 
   &__address {
     margin-top: 16px;
-    font-weight: 400;
-    font-size: 14px;
-    color: #fff;
     max-width: 218px;
+
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      color: #fff;
+
+      &:hover {
+        color: #ffffff9f;
+      }
+    }
   }
 
   &__bottom {
@@ -101,20 +119,34 @@
       font-weight: 400;
       font-size: 14px;
       color: #fff;
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+
+        &:hover {
+          color: #ffffff9f;
+        }
+      }
     }
   }
-}
 
-.menu {
-  list-style-type: none;
-  padding: 0;
-  &__item:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  &__menu {
+    list-style-type: none;
+    padding: 0;
+    .footer__item:not(:last-child) {
+      margin-bottom: 20px;
+    }
 
-  &__link {
-    font-weight: 400;
-    font-size: 18px;
-    color: #fff;
+    .footer__link {
+      font-weight: 400;
+      font-size: 18px;
+      color: #fff;
+
+      &:hover {
+        color: #ffffff9f;
+      }
+    }
   }
 }
