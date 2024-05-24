@@ -68,4 +68,24 @@
       color: #000;
     }
   }
+
+  &__waterpark-quality {
+    border-radius: 16px;
+    padding: 28px 35px;
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    background-color: $second-color;
+
+    &:hover {
+      background-color: #e74848;
+      color: #fff;
+    }
+  }
+
+  &__complex-item {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }

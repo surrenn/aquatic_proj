@@ -20,11 +20,19 @@ a {
   }
 }
 
+body {
+  height: 100vh;
+}
+
 .wrapper {
-  min-height: 100%;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
 }
 
 ._container {
@@ -50,3 +58,12 @@ a {
 @import "blocks/polgun";
 @import "blocks/exp";
 @import "blocks/footer";
+
+// ---------
+
+@import "blocks/otherPages/main-promo";
+
+// --------- waterParkSlides
+
+@import "blocks/otherPages/waterParkSlides/waterpark-quality";
+@import "blocks/otherPages/waterParkSlides/park-complex";

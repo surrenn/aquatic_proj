@@ -1,0 +1,32 @@
+.waterpark-quality {
+  padding-top: 50px;
+  min-height: 846px;
+  &__container {
+  }
+
+  &__wrapper {
+    max-width: 1146px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: $second-font;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 140%;
+    color: #1e1e1e;
+  }
+
+  &__text {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #1e1e1e;
+  }
+
+  &__btn {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
