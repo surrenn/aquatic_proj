@@ -1,0 +1,46 @@
+.river-types {
+  padding-top: 100px;
+  min-height: 320px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__rivers {
+    margin-top: 50px;
+  }
+}
+
+.rivers {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+  row-gap: 40px;
+  &__column {
+    flex: 0 1 50%;
+    padding: 0 20px;
+  }
+
+  &__rivers-item {
+  }
+}
+
+.river-types__rivers {
+  margin-top: 50px;
+}
+
+.rivers-item {
+  &__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #1e1e1e;
+
+    span {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 130%;
+      color: #1e1e1e;
+    }
+  }
+}

@@ -22,6 +22,7 @@ a {
 
 body {
   height: 100vh;
+  // overflow: hidden;
 }
 
 .wrapper {
@@ -29,6 +30,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .main {
@@ -65,8 +67,20 @@ body {
 @import "blocks/otherPages/text-section";
 @import "blocks/otherPages/photo";
 @import "blocks/otherPages/types";
+@import "blocks/otherPages/difference";
+@import "blocks/otherPages/global";
+@import "blocks/otherPages/cases";
+@import "blocks/modal";
 
 // --------- waterParkSlides
 
 @import "blocks/otherPages/waterParkSlides/waterpark-quality";
 @import "blocks/otherPages/waterParkSlides/park-complex";
+
+// --------- slowRiver
+
+@import "blocks/otherPages/slowRiver/river-types";
+
+// --------- productPage
+
+@import "blocks/otherPages/productPage/product";
