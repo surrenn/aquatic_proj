@@ -9,9 +9,6 @@
     ),
     url("../../img/promo/promo_bg.png") center center / cover no-repeat;
 
-  &__container {
-  }
-
   &__title {
     font-family: $second-font;
     font-weight: 900;
@@ -32,7 +29,35 @@
   }
 }
 
-.btn {
-  &__promo {
+@media (max-width: 1220px) {
+  .promo {
+    &__block {
+      max-width: 700px;
+    }
+    &__title {
+      font-size: 45px;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .promo {
+    padding-top: 120px;
+    padding-bottom: 0;
+    &__block {
+      max-width: 400px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__btn {
+      width: 100%;
+    }
   }
 }

@@ -42,3 +42,19 @@
     position: relative;
   }
 }
+
+@media (max-width: 1024px) {
+  .big-wrapper {
+    padding: 60px 20px;
+  }
+
+  .big-wrapper__header {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .big-wrapper {
+    border-radius: 0;
+  }
+}

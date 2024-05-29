@@ -10,6 +10,12 @@
   text-align: center;
   line-height: 13px;
 
+  &__mobile-menu {
+    padding: 16px 50px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
   &:hover {
     background-color: $second-color;
     color: #fff;
@@ -87,5 +93,16 @@
   &__complex-item {
     font-size: 14px;
     line-height: 14px;
+  }
+}
+
+@media (max-width: 590px) {
+  .btn {
+    font-size: 14px;
+    padding: 16px 0;
+
+    &__waterpark-quality {
+      padding: 18px 0;
+    }
   }
 }

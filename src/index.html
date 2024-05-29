@@ -9,61 +9,147 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__container _container">
-          <a href="./index.html" class="header__logo">
-            <img src="icons/logo.svg" alt="logo" />
-          </a>
+        <div class="big-wrapper big-wrapper__header">
+          <div class="header__desktop">
+            <a href="./index.html" class="header__logo">
+              <img src="icons/logo.svg" alt="logo" />
+            </a>
 
-          <nav class="header__menu menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="./waterParkSlides.html" class="menu__link"
-                  >Горки для аквапарка</a
-                >
-              </li>
-              <li class="menu__item">
-                <a href="./wavePool.html" class="menu__link"
-                  >Волновой бассейн</a
-                >
-              </li>
-              <li class="menu__item">
-                <a href="./slowRiver.html" class="menu__link">Медленная река</a>
-              </li>
-              <li class="menu__item">
-                <a href="./poolForSurfing.html" class="menu__link"
-                  >Бассейн для серфинга</a
-                >
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Калькулятор</a>
-              </li>
-            </ul>
-          </nav>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="./waterParkSlides.html" class="menu__link"
+                    >Горки для аквапарка</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="./wavePool.html" class="menu__link"
+                    >Волновой бассейн</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="./slowRiver.html" class="menu__link"
+                    >Медленная река</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="./poolForSurfing.html" class="menu__link"
+                    >Бассейн для серфинга</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Калькулятор</a>
+                </li>
+              </ul>
+            </nav>
 
-          <a href="tel:+77057241100" class="header__phone">+7 705 724 11 00</a>
+            <a href="tel:+77057241100" class="header__phone"
+              >+7 705 724 11 00</a
+            >
 
-          <a href="#" class="header__consultation btn">Консультация</a>
+            <a href="#" class="header__consultation btn">Консультация</a>
 
-          <div class="header__img">
-            <img src="icons/header/wa.svg" alt="WhatsApp" />
+            <div class="header__img">
+              <img src="icons/header/wa.svg" alt="WhatsApp" />
+            </div>
+          </div>
+
+          <div class="header__mobile">
+            <a href="./index.html" class="header__logo">
+              <img src="icons/logo.svg" alt="logo" />
+            </a>
+
+            <div class="header__hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </header>
 
+      <div class="mobile-menu">
+        <a href="./index.html" class="mobile-menu__logo header__logo">
+          <img src="icons/logo.svg" alt="logo" />
+        </a>
+
+        <div class="mobile-menu__closer">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30.5832 1.41675L1.4165 30.5834M1.41653 1.41675L30.5832 30.5834"
+              stroke="#1E1E1E"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+
+        <nav class="mobile-menu__mobile-nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="./waterParkSlides.html" class="mobile-menu__link"
+                >Горки для аквапарка</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./wavePool.html" class="mobile-menu__link"
+                >Волновой бассейн</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./slowRiver.html" class="mobile-menu__link"
+                >Медленная река</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./poolForSurfing.html" class="mobile-menu__link"
+                >Бассейн для серфинга</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">Калькулятор</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu__bottom">
+          <a href="tel:+77057241100" class="mobile-menu__phone"
+            >+7 705 724 11 00</a
+          >
+
+          <div class="mobile-menu__btn">
+            <a href="#" class="btn btn__mobile-menu">Консультация</a>
+
+            <div class="mobile-menu__icon">
+              <img src="icons/header/wa.svg" alt="WhatsApp" />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <main class="main">
         <section class="main__promo promo">
           <div class="promo__container _container">
-            <h1 class="promo__title">
-              Водные горки. Аквапарки. Развлекательные центры
-            </h1>
-            <div class="promo__subtitle">
-              Проектируем, строим и обслуживаем аквапарки, развлекательные,
-              спортивные и релаксационные водные объекты
-            </div>
+            <div class="promo__block">
+              <h1 class="promo__title">
+                Водные горки. Аквапарки. Развлекательные центры
+              </h1>
+              <div class="promo__subtitle">
+                Проектируем, строим и обслуживаем аквапарки, развлекательные,
+                спортивные и релаксационные водные объекты
+              </div>
 
-            <a href="" class="promo__btn btn btn__waterpark-quality"
-              >Смотреть каталог</a
-            >
+              <a href="" class="promo__btn btn btn__waterpark-quality"
+                >Смотреть каталог</a
+              >
+            </div>
           </div>
         </section>
 
@@ -98,95 +184,101 @@
                 Воплотим в жизнь ваши мечты!
               </div>
 
-              <div class="whyus__reasons-block reasons-block">
-                <div class="reasons-block__column">
-                  <div class="reasons-block__why-item why-item">
-                    <div class="why-item__img">
-                      <img src="./icons/whyus/like.png" alt="experience" />
-                    </div>
-                    <h4 class="why-item__title">
-                      25 лет опыта работы в сфере аквапарков
-                    </h4>
+              <div class="whyus__wrapper">
+                <div class="whyus__list">
+                  <div class="whyus__reasons-block reasons-block">
+                    <div class="reasons-block__column">
+                      <div class="reasons-block__why-item why-item">
+                        <div class="why-item__img">
+                          <img src="./icons/whyus/like.png" alt="experience" />
+                        </div>
+                        <h4 class="why-item__title">
+                          25 лет опыта работы в сфере аквапарков
+                        </h4>
 
-                    <div class="why-item__caption">
-                      Свой первый аквапарк мы запустили в 2002 году
+                        <div class="why-item__caption">
+                          Свой первый аквапарк мы запустили в 2002 году
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
 
-                <div class="reasons-block__column">
-                  <div class="reasons-block__why-item why-item">
-                    <div class="why-item__img">
-                      <img src="./icons/whyus/team.png" alt="team" />
+                    <div class="reasons-block__column">
+                      <div class="reasons-block__why-item why-item">
+                        <div class="why-item__img">
+                          <img src="./icons/whyus/team.png" alt="team" />
+                        </div>
+                        <h4 class="why-item__title">
+                          Команда из 120 профессионалов
+                        </h4>
+
+                        <div class="why-item__caption">
+                          В нашей команде работают те, кто любит и знает свое
+                          дело
+                        </div>
+                      </div>
                     </div>
-                    <h4 class="why-item__title">
-                      Команда из 120 профессионалов
-                    </h4>
 
-                    <div class="why-item__caption">
-                      В нашей команде работают те, кто любит и знает свое дело
+                    <div class="reasons-block__column">
+                      <div class="reasons-block__why-item why-item">
+                        <div class="why-item__img">
+                          <img
+                            src="./icons/whyus/manufact.png"
+                            alt="manufacturer"
+                          />
+                        </div>
+                        <h4 class="why-item__title">
+                          Лучшие мировые производители
+                        </h4>
+
+                        <div class="why-item__caption">
+                          За годы работы мы нашли и выбрали самых лучших
+                          производителей со всего мира в сфере аква индустрии
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
 
-                <div class="reasons-block__column">
-                  <div class="reasons-block__why-item why-item">
-                    <div class="why-item__img">
-                      <img
-                        src="./icons/whyus/manufact.png"
-                        alt="manufacturer"
-                      />
+                    <div class="reasons-block__column">
+                      <div class="reasons-block__why-item why-item">
+                        <div class="why-item__img">
+                          <img src="./icons/whyus/life.png" alt="life" />
+                        </div>
+                        <h4 class="why-item__title">
+                          Мы готовы воплотить в жизнь проект любой сложности
+                        </h4>
+
+                        <div class="why-item__caption">
+                          От мини аквапарка до большого комплекса
+                        </div>
+                      </div>
                     </div>
-                    <h4 class="why-item__title">
-                      Лучшие мировые производители
-                    </h4>
 
-                    <div class="why-item__caption">
-                      За годы работы мы нашли и выбрали самых лучших
-                      производителей со всего мира в сфере аква индустрии
+                    <div class="reasons-block__column">
+                      <div class="reasons-block__why-item why-item">
+                        <div class="why-item__img">
+                          <img src="./icons/whyus/care.png" alt="care" />
+                        </div>
+                        <h4 class="why-item__title">Забота о клиентах</h4>
+
+                        <div class="why-item__caption">
+                          Для нас обслуживание клиентов означает решение
+                          потребностей как можно быстрее, работая как можно
+                          быстрее
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
 
-                <div class="reasons-block__column">
-                  <div class="reasons-block__why-item why-item">
-                    <div class="why-item__img">
-                      <img src="./icons/whyus/life.png" alt="life" />
-                    </div>
-                    <h4 class="why-item__title">
-                      Мы готовы воплотить в жизнь проект любой сложности
-                    </h4>
+                    <div class="reasons-block__column">
+                      <div class="reasons-block__why-item why-item">
+                        <div class="why-item__img">
+                          <img src="./icons/whyus/disign.png" alt="disign" />
+                        </div>
+                        <h4 class="why-item__title">Проектирование и дизайн</h4>
 
-                    <div class="why-item__caption">
-                      От мини аквапарка до большого комплекса
-                    </div>
-                  </div>
-                </div>
-
-                <div class="reasons-block__column">
-                  <div class="reasons-block__why-item why-item">
-                    <div class="why-item__img">
-                      <img src="./icons/whyus/care.png" alt="care" />
-                    </div>
-                    <h4 class="why-item__title">Забота о клиентах</h4>
-
-                    <div class="why-item__caption">
-                      Для нас обслуживание клиентов означает решение
-                      потребностей как можно быстрее, работая как можно быстрее
-                    </div>
-                  </div>
-                </div>
-
-                <div class="reasons-block__column">
-                  <div class="reasons-block__why-item why-item">
-                    <div class="why-item__img">
-                      <img src="./icons/whyus/disign.png" alt="disign" />
-                    </div>
-                    <h4 class="why-item__title">Проектирование и дизайн</h4>
-
-                    <div class="why-item__caption">
-                      Ценность ваших инвестиций является нашим приоритетом в
-                      нашем процессе планирования.
+                        <div class="why-item__caption">
+                          Ценность ваших инвестиций является нашим приоритетом в
+                          нашем процессе планирования.
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -222,6 +314,16 @@
             </div>
             <div class="bubble10">
               <img src="./icons/whyus/bubble10.png" alt="bubble" />
+            </div>
+
+            <div class="bubble_mob1">
+              <img src="./icons/whyus/bubble_mob1.png" alt="bubble" />
+            </div>
+            <div class="bubble_mob2">
+              <img src="./icons/whyus/bubble_mob2.png" alt="bubble" />
+            </div>
+            <div class="bubble_mob3">
+              <img src="./icons/whyus/bubble_mob3.png" alt="bubble" />
             </div>
           </div>
         </section>
@@ -358,21 +460,38 @@
             <div class="projects__container _container">
               <h2 class="projects__title title">Реализованные проекты</h2>
             </div>
-            <div class="projects__photo-block photo-block">
-              <div class="photo-block__img-1">
-                <img src="./img/projects/waterslide1.png" alt="waterslider" />
-              </div>
+            <div class="projects__photo-block">
+              <div class="projects__list">
+                <div class="photo-block">
+                  <div class="photo-block__img-1">
+                    <img
+                      src="./img/projects/waterslide1.png"
+                      alt="waterslider"
+                    />
+                  </div>
 
-              <div class="photo-block__img-2">
-                <img src="./img/projects/waterslide2.png" alt="waterslider" />
-              </div>
+                  <div class="photo-block__img-2">
+                    <img
+                      src="./img/projects/waterslide2.png"
+                      alt="waterslider"
+                    />
+                  </div>
 
-              <div class="photo-block__img-3">
-                <img src="./img/projects/child.png" alt="waterslider" />
-              </div>
+                  <div class="photo-block__img-3">
+                    <img src="./img/projects/child.png" alt="waterslider" />
+                  </div>
 
-              <div class="photo-block__img-4">
-                <img src="./img/projects/bigSlider.png" alt="waterslider" />
+                  <div class="projects__projects-slider projects-slider">
+                    <img src="./img/projects/bigSlider.png" alt="waterslider" />
+
+                    <div class="projects-slider__arr-left">
+                      <img src="./icons/projects/arr_left.svg" alt="arrow" />
+                    </div>
+                    <div class="projects-slider__arr-right">
+                      <img src="./icons/projects/arr_right.svg" alt="arrow" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

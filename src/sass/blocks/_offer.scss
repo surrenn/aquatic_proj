@@ -8,7 +8,9 @@
   flex-wrap: wrap;
   margin: 0 -40px;
   &__column {
+    flex: 0 1 50%;
     padding: 0 40px;
+    min-width: 600px;
   }
 
   &__column:nth-child(2) {
@@ -32,10 +34,10 @@
 }
 
 .slides-item {
-  max-width: 600px;
-  min-height: 673px;
+  // max-width: 600px;
+  // min-height: 673px;
   &__img {
-    max-width: 600px;
+    width: 100%;
     height: 400px;
     margin-bottom: 20px;
     img {
@@ -96,5 +98,98 @@
   .bubble4 {
     right: 56px;
     bottom: 63px;
+  }
+}
+
+@media (max-width: 1570px) {
+  .big-wrapper__offer {
+    .bubble1,
+    .bubble2,
+    .bubble3,
+    .bubble4 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1310px) {
+  .slides {
+    justify-content: center;
+
+    &__column:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &__column:not(:first-child) {
+      margin-top: 0;
+    }
+
+    & > *:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .slides {
+    margin-right: 0px;
+    margin-left: 0px;
+    &__column {
+      flex: 0 1 80%;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .offer {
+    padding: 0;
+  }
+
+  .slides {
+    &__column {
+      min-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .offer__slides {
+    margin-top: 30px;
+  }
+
+  .slides {
+    & > *:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .slides-item {
+    &__img {
+      height: 220px;
+      margin-bottom: 16px;
+    }
+
+    &__caption {
+      padding: 0;
+    }
+
+    &__title {
+      margin-bottom: 8px;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 150%;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      margin-bottom: 16px;
+    }
+
+    &__btn {
+      width: 100%;
+    }
   }
 }

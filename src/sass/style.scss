@@ -44,6 +44,12 @@ body {
   box-sizing: content-box;
 }
 
+@media (max-width: 1024px) {
+  ._container {
+    padding: 0 20px;
+  }
+}
+
 @import "blocks/bigWrapper";
 @import "blocks/header";
 @import "blocks/btns";
@@ -60,6 +66,7 @@ body {
 @import "blocks/polgun";
 @import "blocks/exp";
 @import "blocks/footer";
+@import "blocks/mobile-menu";
 
 // --------- repeating elements
 
