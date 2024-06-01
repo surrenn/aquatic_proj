@@ -31,6 +31,7 @@
   &__column {
     flex: 0 1 33.333%;
     padding: 0 20px;
+    min-width: 438px;
   }
 
   &__complex-item {
@@ -43,7 +44,7 @@
 .complex-item {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 1px !important;
   &__img {
     img {
       width: 100%;
@@ -84,6 +85,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
+    color: #1e1e1e !important;
   }
 
   &__link {
@@ -127,5 +129,93 @@
   .bubble5 {
     right: 79px;
     bottom: 183px;
+  }
+}
+
+@media (max-width: 1725px) {
+  .order {
+    .bubble1,
+    .bubble2,
+    .bubble3,
+    .bubble4,
+    .bubble5 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1305px) {
+  .complex-block {
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .order {
+    padding: 60px 0;
+  }
+
+  .complex-block {
+    row-gap: 30px;
+    &__column {
+      padding: 0;
+      min-width: 80%;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .order {
+    &__subtitle {
+      display: none;
+    }
+
+    &__complex-block {
+      margin-top: 30px;
+    }
+
+    &__btn {
+      a {
+        width: 100%;
+      }
+    }
+
+    .complex-item {
+      &__img {
+        height: 220px !important;
+        margin-bottom: 0 !important;
+      }
+
+      &__descr {
+        padding: 0;
+        margin-top: 16px;
+      }
+
+      &__title {
+        font-size: 16px;
+        line-height: 150%;
+      }
+
+      &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+      }
+
+      &__price {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #1e1e1e;
+      }
+    }
+  }
+
+  .complex-block {
+    &__column {
+      min-width: 100%;
+    }
   }
 }

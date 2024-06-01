@@ -1,6 +1,6 @@
 .polgun {
   min-height: 600px;
-  padding: 80px 0;
+  padding: 80px 20px;
 
   &__container {
   }
@@ -22,12 +22,95 @@
   &__img {
     position: absolute;
     right: 0;
-    // top: 33px;
     bottom: 0;
     max-width: 985px;
 
     img {
       width: 100%;
+    }
+
+    .polgun_full {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1760px) {
+  .polgun {
+    &__img {
+      max-width: 500px;
+      bottom: 94px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .polgun {
+    .polgun_cut {
+      display: none;
+    }
+
+    .polgun_full {
+      display: inline-block;
+    }
+
+    &__img {
+      position: static;
+      margin: 50px auto 0 auto;
+      max-width: 700px;
+    }
+
+    &__text {
+      margin: 30px auto 0 auto;
+    }
+
+    &__title {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .polgun {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .polgun {
+    &__container {
+      padding: 0;
+    }
+
+    &__img {
+      margin: 50px auto 0 auto;
+      max-width: 700px;
+    }
+
+    &__text {
+      margin: 30px auto 0 auto;
+    }
+
+    &__title {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .polgun {
+    &__text {
+      margin: 28px auto 0 auto;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+    }
+
+    &__img {
+      margin: 34px auto 0 auto;
+      max-width: 450px;
     }
   }
 }

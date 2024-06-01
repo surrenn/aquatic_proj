@@ -24,3 +24,20 @@
     }
   }
 }
+
+@media (max-width: 590px) {
+  .exp {
+    min-height: 685px;
+
+    &__text {
+      margin-top: 30px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+    }
+
+    &__img {
+      margin-top: 30px;
+    }
+  }
+}
