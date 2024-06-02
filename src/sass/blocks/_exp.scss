@@ -1,5 +1,6 @@
 .exp {
   min-height: 931px;
+  padding-bottom: 100px;
   &__container {
   }
 
@@ -22,6 +23,12 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .exp {
+    padding-bottom: 60px;
   }
 }
 
