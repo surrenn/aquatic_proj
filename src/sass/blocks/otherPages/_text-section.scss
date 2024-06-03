@@ -62,3 +62,15 @@
 .text-section__text-block {
   margin-top: 100px;
 }
+
+@media (max-width: 1500px) {
+  .text-section {
+    &__video {
+      flex-direction: column;
+
+      iframe {
+        margin: 0;
+      }
+    }
+  }
+}

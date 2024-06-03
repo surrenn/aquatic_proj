@@ -30,3 +30,27 @@
     text-align: center;
   }
 }
+
+@media (max-width: 590px) {
+  .waterpark-quality {
+    padding-top: 20px;
+    min-height: 600px;
+    &__title {
+      font-size: 16px;
+      line-height: 150%;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 130%;
+      margin-top: 12px;
+    }
+
+    &__btn {
+      margin-top: 28px;
+      a {
+        width: 100%;
+      }
+    }
+  }
+}
