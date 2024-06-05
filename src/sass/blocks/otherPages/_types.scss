@@ -1,5 +1,5 @@
 .types {
-  padding-bottom: 100px;
+  padding: 100px 0;
   min-height: 721px;
 
   &__title {
@@ -15,6 +15,7 @@
   &__column {
     padding: 0 20px;
     flex: 0 1 33.333%;
+    min-width: 580px;
   }
 
   &__pools-item {
@@ -26,7 +27,6 @@
 }
 
 .pools-item {
-  min-height: 607px;
   &__img {
     width: 100%;
     height: 553px;
@@ -49,6 +49,8 @@
     margin-top: 20px;
   }
 }
+
+// For PoolForSurfing
 
 .surfing {
   display: flex;
@@ -90,5 +92,64 @@
     line-height: 140%;
     text-align: center;
     color: #1e1e1e;
+  }
+}
+
+@media (max-width: 1730px) {
+  .pools {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .big-wrapper__types {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .types {
+    padding: 60px 0;
+  }
+
+  .pools {
+    margin: 0;
+  }
+
+  .types__pools {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 590px) {
+  .types {
+    &__title {
+      text-align: left;
+    }
+  }
+  .pools {
+    row-gap: 28px;
+    &__column {
+      min-width: 200px;
+      flex: 0 1 320px;
+      padding: 0;
+    }
+  }
+
+  .types__pools {
+    margin-top: 28px;
+  }
+
+  .pools-item {
+    &__img {
+      height: 220px;
+    }
+
+    &__name {
+      text-align: left;
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 150%;
+    }
   }
 }

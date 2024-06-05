@@ -1,5 +1,5 @@
 .cases {
-  padding-top: 100px;
+  padding: 100px 0;
   min-height: 904px;
   &__title {
     text-align: center;
@@ -20,48 +20,32 @@
       color: #00ace4;
     }
   }
+
+  &__wrapper {
+    margin-top: 50px;
+    position: relative;
+  }
+
+  &__list {
+    overflow-x: hidden;
+  }
 }
 
 .cases-slider {
   display: flex;
-  flex-wrap: wrap;
   margin: 0 -20px;
   row-gap: 40px;
-  position: relative;
+  min-width: 1780px;
   &__column {
-    flex: 0 1 25%;
+    flex: 0 1 445px;
     padding: 0 20px;
   }
 
   &__cases-item {
   }
-
-  &__arrow {
-    position: absolute;
-    width: 50px;
-    height: 110px;
-    cursor: pointer;
-  }
-
-  .left-arr {
-    left: -50px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .right-arr {
-    right: -50px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-.cases__cases-slider {
-  margin-top: 50px;
 }
 
 .cases-item {
-  height: 500px;
   &__img {
     width: 100%;
     height: 405px;
@@ -92,5 +76,132 @@
     line-height: 130%;
     text-align: center;
     color: #1e1e1e;
+  }
+}
+
+.cases-slider__arrow {
+  position: absolute;
+  width: 50px;
+  height: 110px;
+  cursor: pointer;
+}
+
+.left-arr {
+  left: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-arr {
+  right: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.big-wrapper__cases {
+  padding: 0 86px;
+}
+
+@media (max-width: 1100px) {
+  .cases {
+    &__count {
+      font-size: 35px;
+
+      span {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .big-wrapper__cases {
+    padding: 0 20px;
+    padding-right: 0;
+  }
+
+  .right-arr,
+  .left-arr {
+    display: none;
+  }
+
+  .cases {
+    &__list {
+      overflow-x: scroll;
+      padding-right: 20px;
+    }
+
+    &__count {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .cases {
+    padding: 60px 0;
+
+    &__title {
+      text-align: left;
+    }
+
+    &__count {
+      margin-top: 60px;
+
+      font-size: 23px;
+
+      span {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .cases {
+    min-height: 584px;
+    &__wrapper {
+      margin-top: 28px;
+    }
+
+    &__count {
+      font-size: 16px;
+      line-height: 150%;
+      text-align: left;
+
+      span {
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+  }
+
+  .cases-slider {
+    margin: 0;
+    min-width: 1080px;
+    column-gap: 16px;
+    &__column {
+      flex: 0 0 286px;
+      padding: 0;
+    }
+  }
+
+  .cases-item {
+    &__img {
+      height: 220px;
+    }
+
+    &__name {
+      font-size: 16px;
+      line-height: 150%;
+      text-align: left;
+      margin-top: 16px;
+    }
+
+    &__country {
+      font-size: 14px;
+      text-align: left;
+      margin-top: 4px;
+    }
   }
 }
