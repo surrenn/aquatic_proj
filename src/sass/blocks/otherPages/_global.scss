@@ -51,6 +51,7 @@
 
     &__text {
       padding-left: 0;
+      text-align: center;
     }
   }
 }
@@ -64,6 +65,10 @@
 @media (max-width: 800px) {
   .global {
     padding-top: 60px;
+
+    &__text {
+      text-align: left;
+    }
   }
 }
 

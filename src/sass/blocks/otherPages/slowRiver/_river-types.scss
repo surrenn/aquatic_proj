@@ -44,3 +44,48 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .big-wrapper__river-types {
+    padding: 0 20px;
+  }
+
+  .rivers {
+    margin-right: 0;
+    margin-left: 0;
+    &__column {
+      flex: 0 1 100%;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .river-types {
+    padding-top: 60px;
+
+    &__title {
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .river-types__rivers {
+    margin-top: 28px;
+  }
+
+  .rivers {
+    row-gap: 16px;
+  }
+
+  .rivers-item {
+    &__text {
+      font-size: 14px;
+
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}

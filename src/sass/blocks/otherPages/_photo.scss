@@ -1,5 +1,5 @@
 .photo {
-  padding-top: 100px;
+  padding: 100px 0;
   min-height: 850px;
   &__collage {
     display: grid;
@@ -70,8 +70,7 @@
   }
 
   .photo {
-    padding-top: 40px;
-    padding-bottom: 0px;
+    padding: 60px 0;
     min-height: 580px;
 
     &__list {
