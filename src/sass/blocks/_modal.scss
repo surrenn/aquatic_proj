@@ -1,4 +1,5 @@
 .modal {
+  padding: 0 60px;
   display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.6);
@@ -83,7 +84,6 @@
   &__choice {
     display: flex;
     flex-direction: column;
-
     margin-bottom: 30px;
   }
 
@@ -91,6 +91,14 @@
     font-family: $second-font;
     line-height: 140%;
     margin-bottom: 30px;
+  }
+
+  &__input {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    margin-top: 5px;
   }
 
   &__radio {
@@ -139,5 +147,90 @@
 
   .calc__radio-input:checked + .calc__option::after {
     opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .modal {
+    padding: 0;
+
+    &__free-consult {
+      margin: 0;
+      margin-top: 138px;
+      background-color: #fff;
+      max-width: 100%;
+      border-radius: 0;
+      padding: 70px 20px 60px 20px;
+
+      .free-consult__form {
+        margin-top: 20px;
+      }
+    }
+
+    &__closer {
+      top: 10px;
+      right: 10px;
+
+      svg {
+        path {
+          stroke: black;
+        }
+      }
+    }
+  }
+
+  .calc {
+    margin: 0;
+    background-color: #fff;
+    max-width: 100%;
+    border-radius: 0;
+    padding: 70px 20px 60px 20px;
+  }
+}
+
+@media (max-width: 590px) {
+  .calc {
+    &__title {
+      font-size: 20px;
+      line-height: 110%;
+      margin-bottom: 20px;
+    }
+
+    &__caption {
+      font-size: 14px;
+      line-height: 130%;
+    }
+
+    &__question {
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 16px;
+    }
+
+    &__option {
+      font-size: 14px;
+      line-height: 130%;
+    }
+
+    &__radio-label {
+      .calc__option {
+        &::before {
+          top: -3px;
+        }
+
+        &::after {
+          top: 4px;
+        }
+      }
+    }
+
+    &__input {
+      margin-bottom: 12px;
+    }
+
+    &__btn {
+      margin-top: 0;
+    }
   }
 }
