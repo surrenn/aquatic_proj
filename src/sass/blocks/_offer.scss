@@ -135,8 +135,9 @@
     margin-right: 0px;
     margin-left: 0px;
     &__column {
-      flex: 0 1 80%;
+      flex: 0 1 600px;
       padding: 0;
+      min-width: 200px;
     }
   }
 }
@@ -144,12 +145,6 @@
 @media (max-width: 800px) {
   .offer {
     padding: 0;
-  }
-
-  .slides {
-    &__column {
-      min-width: 100%;
-    }
   }
 }
 
@@ -159,6 +154,10 @@
   }
 
   .slides {
+    &__column {
+      flex: 0 1 320px;
+    }
+
     & > *:not(:last-child) {
       margin-bottom: 30px;
     }

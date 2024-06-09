@@ -164,10 +164,6 @@
 
   .complex-block {
     row-gap: 30px;
-    &__column {
-      padding: 0;
-      min-width: 80%;
-    }
   }
 }
 
@@ -220,7 +216,10 @@
 
   .complex-block {
     &__column {
-      min-width: 100%;
+      padding: 0;
+      flex: 0 1 320px;
+      min-width: 200px;
+      min-height: 0;
     }
   }
 }
