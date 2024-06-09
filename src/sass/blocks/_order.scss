@@ -64,10 +64,12 @@
   }
 
   &__title {
-    font-family: $second-font;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
+    a {
+      font-family: $second-font;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+    }
   }
 
   &__text {
@@ -185,8 +187,8 @@
 
     .complex-item {
       &__img {
-        height: 220px !important;
-        margin-bottom: 0 !important;
+        height: 220px;
+        margin-bottom: 0;
       }
 
       &__descr {
@@ -195,8 +197,10 @@
       }
 
       &__title {
-        font-size: 16px;
-        line-height: 150%;
+        a {
+          font-size: 16px;
+          line-height: 150%;
+        }
       }
 
       &__text {
